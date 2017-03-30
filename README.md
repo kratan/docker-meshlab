@@ -2,7 +2,7 @@
 
 Attention: Do not start this on your Host with running Xorg. 
 
-Build with 
+## Build with 
 
 docker build -t meshlab-2016 .
 
@@ -23,10 +23,14 @@ SCREEN_RESOLUTION, Xorg Screen Resolution, default 4096x2160
 
 You have to use a free tty where Xorg can run on. 
 
-Connect with Xpra Client 
+## Connect with Xpra Client 
 
 ```sh
 XPRA_PASSWORD=Nextpass xpra attach ssl:HOSTNAME:10050 --ssl-server-verify-mode=none
 ```
 
 The switch --ssl-server-verify-mode=none is necessary, because we used a self signed Cert.
+
+On https://sourceforge.net/projects/meshlab/files/meshlab/MeshLab%20sample%20datasets/ you can get some demo data sets. In meshlab use them with File -> Import Mesh! 
+
+Without an nvenc h264 encoder this app performs the best when choosing jpeg as encoding method!
