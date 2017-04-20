@@ -1,4 +1,4 @@
-FROM ubuntu:xenial-20170214 
+FROM ubuntu:xenial
 LABEL maintainer="andreas.kratzer@kit.edu"
  
 
